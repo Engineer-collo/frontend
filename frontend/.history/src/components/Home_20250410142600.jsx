@@ -40,10 +40,10 @@ const Home = () => {
         Profiles
       </Link>
       <Link
-        to="/Likes"
+        to="/Profiles"
         className=" text-blue-700 px-3 py-2 rounded-md transition duration-300"
       >
-        Like
+        Profiles
       </Link>
 
 

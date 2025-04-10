@@ -12,13 +12,13 @@ const Posts = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 px-4">
-      <h1 className="text-3xl font-bold mb-8 text-center">Posts</h1>
-      <div className="space-y-6 w-full max-w-2xl">
+    <div className=""
+      <h1 className="text-xl font-bold mb-4">Posts</h1>
+      <div className="space-y-6">
         {posts.map((post) => (
-          <div key={post.id} className="p-6 bg-white border rounded-2xl shadow-md">
-            <h2 className="text-xl font-semibold text-center mb-2">{post.title}</h2>
-            <p className="text-gray-700 text-center">{post.body}</p>
+          <div key={post.id} className="p-4 border rounded shadow">
+            <h2 className="text-lg font-semibold">{post.title}</h2>
+            <p className="text-gray-700">{post.body}</p>
           </div>
         ))}
       </div>
