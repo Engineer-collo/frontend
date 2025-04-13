@@ -273,6 +273,12 @@ const Home = () => {
     <>
       <Navbar />
       <div className="container mx-auto px-4 py-8">
+        <p className="text-center text-purple-500 text-6xl pb-20"> 
+          <i>
+          Welcome to Pixi-Fy Home Page
+          </i>
+           </p>
+
         <div className="max-w-2xl mx-auto">
           {loading && (
             <p className="text-center text-gray-500">Loading posts...</p>
@@ -324,7 +330,7 @@ const Home = () => {
                 <img
                   src={post.image_url}
                   alt={post.title}
-                  className="w-full h-64 object-cover mb-4 rounded-lg"
+                  className="w-full h-80 object-cover mb-4 rounded-lg"
                 />
               )}
 

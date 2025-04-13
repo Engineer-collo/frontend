@@ -12,6 +12,7 @@ import Profiles   from "./components/Profiles";
 import Signup     from "./components/Signup";
 import Users      from "./components/Users";
 import ProtectedRoute from "./components/ProtectedRoute";
+import Footer from "./components/Footer"
 
 const App = () => {
   return (
@@ -83,6 +84,7 @@ const App = () => {
           {/* catch‑all → redirect to home (or 404) */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
+        <Footer/>
       </div>
     </Router>
   );
